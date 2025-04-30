@@ -79,7 +79,7 @@ const Footer = () => {
               <FiMail className="text-xl" />
               <div>
                 <p className="font-semibold">Email</p>
-                <p className="text-gray-400">ssssglobalconsultants@mail.com</p>
+                <p className="text-gray-400">ssssglobalconsultants@gmail.com</p>
               </div>
             </div>
           </div>
