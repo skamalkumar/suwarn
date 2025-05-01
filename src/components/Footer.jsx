@@ -1,6 +1,7 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md';
 import { FiPhone, FiMail } from 'react-icons/fi';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -20,16 +21,37 @@ const Footer = () => {
           </div>
 
           {/* Our Services */}
+
           <div>
-            <h2 className="text-lime-400 font-semibold mb-4">Our Services</h2>
-            <ul className="space-y-2 text-sm">
-              <li>Financial Planning</li>
-              <li>Investment Management</li>
-              <li>Retirement Planning</li>
-              <li>Investment Analysis</li>
-              <li className="text-lime-300">Insurance</li>
-            </ul>
-          </div>
+  <h2 className="text-lime-400 font-semibold mb-4">Our Services</h2>
+  <ul className="space-y-2 text-sm">
+  <li>
+  <Link href="/financial-planning" target="_blank" rel="noopener noreferrer">
+    <span className="hover:text-lime-300 transition">Financial Planning</span>
+  </Link>
+</li>
+    <li>
+      <Link href="/investment-management">
+        <span className="hover:text-lime-300 transition">Investment Management</span>
+      </Link>
+    </li>
+    <li>
+      <Link href="/retirement-planning">
+        <span className="hover:text-lime-300 transition">Retirement Planning</span>
+      </Link>
+    </li>
+    <li>
+      <Link href="/investment-analysis">
+        <span className="hover:text-lime-300 transition">Investment Analysis</span>
+      </Link>
+    </li>
+    <li>
+      <Link href="/insurance">
+        <span className="text-lime-300 hover:underline transition">Insurance</span>
+      </Link>
+    </li>
+  </ul>
+</div>
 
           {/* Explore */}
           <div>
