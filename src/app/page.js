@@ -68,9 +68,11 @@ export default function Home() {
             <p className="text-sm text-gray-300 mb-4">
               Whether you're planning for tomorrow or building today, we're just one message away.
             </p>
+        <Link href="/contact">
             <button className="bg-lime-400 text-black px-4 py-2 font-semibold hover:bg-lime-500 transition">
               CONTACT US
-            </button>
+        </button>
+        </Link>
           </div>
         </div>
 
